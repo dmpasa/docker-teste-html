@@ -1,16 +1,11 @@
-function updateTimestamp() {
-  const now = new Date();
-  const formatted = now.toLocaleString("pt-BR");
-  document.getElementById("current-timestamp").textContent = formatted;
-}
-
-fetch("https://api.ipify.org?format=json")
-  .then((res) => res.json())
-  .then((data) => {
-    document.getElementById("public-ip").textContent = data.ip;
-    updateTimestamp();
-  })
-  .catch(() => {
-    document.getElementById("public-ip").textContent = "Não disponível";
-    updateTimestamp();
-  });
+const now = new Date();
+const formatted = now.toLocaleString("pt-BR", {
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit",
+  hour12: false,
+});
+document.getElementById("timestamp").textContent = formatted;
