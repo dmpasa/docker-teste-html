@@ -2,7 +2,7 @@
 Testes para aplicação html dockerizada
 ## Sobre
 
-Este repositório é destinado a testes de aplicações HTML e JavaScript utilizando automação com Docker. Utilizado para demonstrar como empacotar e executar uma aplicação web simples em um ambiente isolado, facilitando o desenvolvimento e a replicação do ambiente.
+Este repositório é destinado a testes de aplicações HTML, JavaScript e automação com Docker. Utilizado para demonstrar como empacotar e executar uma aplicação web simples em um ambiente isolado, facilitando o desenvolvimento e a replicação do ambiente.
 
 ## Como usar
 
