@@ -4,25 +4,17 @@ Testes para aplicação html dockerizada
 
 Este repositório é destinado a testes de aplicações HTML, JavaScript e automação com Docker. Utilizado para demonstrar como empacotar e executar uma aplicação web simples em um ambiente isolado, facilitando o desenvolvimento e a replicação do ambiente.
 
-## Como usar
+## Comandos úteis
 
-1. Clone este repositório:
-    ```bash
-    git clone https://github.com/seu-usuario/docker-teste-html.git
-    ```
-2. Acesse a pasta do projeto:
-    ```bash
-    cd docker-teste-html
-    ```
-3. Construa a imagem Docker:
-    ```bash
-    docker build -t teste-html .
-    ```
-4. Execute o container:
-    ```bash
-    docker run -p 8080:80 teste-html
-    ```
-5. Acesse a aplicação em [http://localhost:8080](http://localhost:8080).
+### Clonar repositório
+```bash
+git clone https://github.com/dmpasa/docker-teste-html.git
+```
+
+### Executar contêiner (comando inline)
+```bash
+docker run -d -p 8080:80 ghcr.io/dmpasa/docker-teste-html:latest
+```
 
 ## Tecnologias
 

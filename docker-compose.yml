@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  teste-html:
+    container_name: teste-html
+    image: ghcr.io/dmpasa/docker-teste-html:${VERSION-latest}
+    ports:
+      - ${PORT-8080}:80
